@@ -207,7 +207,7 @@ class TagPeriodVerifier:
 
 @attr.s
 class TagPhaseAllocator:
-    """ Assign a phase to each photon """
+    """ Assign a phase to each photon. """
 
     photons = attr.ib(validator=instance_of(pd.DataFrame))
     tag = attr.ib(validator=instance_of(pd.Series))
