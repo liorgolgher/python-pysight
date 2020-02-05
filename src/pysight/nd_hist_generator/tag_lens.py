@@ -27,7 +27,7 @@ class TagPipeline:
     tag_pulses = attr.ib(validator=instance_of(pd.Series))
     freq = attr.ib(default=189e3, validator=instance_of(float))  # Hz
     binwidth = attr.ib(
-        default=800e-12, validator=instance_of(float)
+        default=100e-12, validator=instance_of(float)
     )  # Multiscaler binwidth
     num_of_pulses = attr.ib(
         default=1, validator=instance_of(int)
